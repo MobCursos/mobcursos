@@ -1,0 +1,37 @@
+/* ----------------------------------------------- */
+/* Configurações Básicas */
+/* ----------------------------------------------- */
+
+/*Zerando bordas para ter maior domínio sobre os box*/
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+.clearfix {
+    zoom:1;
+    }
+    
+/*limpa o float depois de um elemento.*/
+.clearfix:after {
+    content: '.';
+    clear: both;
+    display: block;
+    height:0;
+    visibility:hidden;
+}
+
+html, body {
+    background-color: #fff; /*Define a cor do fundo*/
+    color: #555;
+    font-family: 'Lato', 'Arial', sans-serif; /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
+    font-weight: 300; /*de acordo com a fonte que importamos*/
+    font-size: 20px;
+    text-rendering: optimizeLegibility; /*otimiza a renderização da fonte para leitura, tendo uma melhor qualidade*/
+    overflow-x: hidden; /*faz sumir a barra de rolagem horizontal*/
+}
+
+/* ----------------------------------------------- */
+/* Seção <num>: <title>*/
+/* ----------------------------------------------- */
