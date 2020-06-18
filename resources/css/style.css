@@ -32,6 +32,64 @@ html, body {
     overflow-x: hidden; /*faz sumir a barra de rolagem horizontal*/
 }
 
+.empresa-header-subtitulo{
+    font-size: 20px;
+    margin-top: 8px;
+}
+
+section {
+    padding: 80px 0;
+}
+
+.empresas-sobre-texto{
+    font-size: 18px;
+    margin-top:10px;
+}
+.formacoes-botao-plano{
+    z-index: 100;
+    margin-top: -20px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding: 14px 30px;
+    position: absolute;
+    text-decoration: none;
+    font-size: 12px;
+    font-weight: bold;
+    text-transform: uppercase;
+    color: #2a7ae4;
+    outline: none;
+    border: none;
+    border-radius: 3px;
+    background-color: #fff;
+    box-shadow: 0 2px 7px 0 rgba(43,107,177,.37);
+}
+
+.icons{
+    font-size: 40px;
+    list-style-type: none;
+    height: 60px;
+}
+
+.planos-empresas{
+    margin-left: 25%;
+    float: left;
+}
+
+.planos-empresas2{
+    margin-left: 25%;
+}
+.cursos{
+    height: 60px;
+    font-size: 20px;
+}
+
+.planos{
+    height: 60px;
+    font-size: 20px;
+    display: list-item;
+    line-height: 60px;
+}
+
 /* ----------------------------------------------- */
 /* Seção <num>: <title>*/
 /* ----------------------------------------------- */
