@@ -38,24 +38,26 @@
         <title>Empresas</title>
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <img src="resources/img/???" alt="logo" class="logo">
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#secExemplo">Exemplo</a></li>
-                    </ul>
+        <header id="header-empresa">
+            <nav class="item-nav">
+                <div class="flex-responsive-nav">
                     <a class="mobile-nav-icon js--mobile-nav-icon">
                         <ion-icon name="menu-sharp"></ion-icon>
                     </a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="index.html">Home</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                        <li><a href="#cursos-destaque">Cursos em Destaque</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="#header-empresa">Empresas</a></li>
+                        <li><a href="formacao.html">Formações</a></li>
+                    </ul>
                 </div>
+                <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
-            <div class="hero-text-box">
-                <h1>Exemplo</h1>
-                <a class="btn btn-full" href="#">Entrar</a>
-                <a class="btn btn-ghost" href="#">Criar conta</a>
-            </div>
         </header>
+
         <section id="empresa" class="empresa-section-features">
             <div class="row">
                 <h1>Capacite toda sua equipe e obtenha melhores resultados</h1>
@@ -105,10 +107,7 @@
                 </div>
             </div>
         </section>
-        <footer>
-            <div class="row">
-            </div>
-        </footer>
+
 
         <script src="vendors/js/jquery.waypoints.min.js">
             var waypoint = new Waypoint({

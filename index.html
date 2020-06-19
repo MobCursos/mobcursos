@@ -36,38 +36,42 @@
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
 
         <title>MobCursos</title>
-        
     </head>
     <body>
-        <header>
-            <nav>
-                <div class="row">
-                    <img src="resources/img/???" alt="logo MobCursos" class="logo">
-                    <ul class="main-nav js--main-nav">
-                        <li><a href="#secExemplo1">Exemplo1</a></li>
-                        <li><a href="#secExemplo2">Exemplo2</a></li>
-                        <li><a href="#secExemplo3">Exemplo3</a></li>
-                        <li><a href="#secExemplo4">Exemplo4</a></li>
-                    </ul>
+        <header id="home" class="container-hero-header">
+            <nav class="item-nav">
+                <div class="flex-responsive-nav">
                     <a class="mobile-nav-icon js--mobile-nav-icon">
                         <ion-icon name="menu-sharp"></ion-icon>
                     </a>
+                    <ul class="main-nav js--main-nav">
+                        <li><a href="#home">Home</a></li>
+                        <li><a href="login.html">Entrar</a></li>
+                        <li><a href="#cursos-destaque">Cursos em Destaque</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#depoimentos">Depoimentos</a></li>
+                        <li><a href="empresa.html">Empresas</a></li>
+                        <li><a href="formacao.html">Formações</a></li>
+                    </ul>
                 </div>
+                
+                <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
-            <div class="hero-text-box">
+            <div class="item-hero-text-box">
                 <h1>MobCursos</h1>
                 <p>Cursos online de TI</p>
                 <a class="btn btn-full" href="login.html">Entrar</a>
-                <a class="btn btn-ghost" href="#">Criar conta</a>
+                <a class="btn btn-empty" href="#">Criar conta</a>
             </div>
+
         </header>
      
+        <section>
+            
+        </section>
 
-
-        <footer>
-            <div class="row">
-                <p>Footer</p>
-            </div>
+        <footer class="container-footer">
+            <p>Copyright &copy; 2020 - MobCursos. Todos os direitos reservados.</p>
         </footer>
 
         <script src="vendors/js/jquery.waypoints.min.js">
