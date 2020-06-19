@@ -32,6 +32,120 @@ html, body {
     overflow-x: hidden; /*faz sumir a barra de rolagem horizontal*/
 }
 
+/* ----------------------------------------------- */
+/* PAGE Index - SECTION 1 (Início) */
+/* ----------------------------------------------- */
+.container-hero-header {
+    background-image: /*linear-gradient(to bottom, rgba(255, 255, 255, 0.5), rgba(0, 0, 0, 0.5)),*/
+                      radial-gradient(circle,rgba(255,255,255,0.2),rgba(0,0,0,0.6)),
+                      url(' ../img/hero.jpg');
+    /*image source: https://i2.wp.com/www.consultoragestal.com.ar/wp-content/uploads/2020/02/img_30298_programhtml.jpg*/
+    /* height: 500px; */
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 20%;
+    height: 100vh;
+
+    display: grid;
+    grid-template-columns: auto auto;
+    grid-template-rows: 33% 33% 33%;
+    grid-template-areas: 
+      "nav nav"
+      ". ."
+      "text .";
+      
+    
+}
+
+.logo {
+    /*padding: 40px; */
+    max-height: 70px;
+}
+
+.item-nav {
+    /* background-color: rgb(0, 0, 0, 50%); */
+    grid-area: nav;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: flex-start;
+    padding: 20px;
+}
+
+.main-nav {
+    display: none;
+    background-color: rgb(0, 0, 0, 50%);
+    box-shadow: 1px 1px 4px black;
+    
+}
+
+.main-nav li {
+    list-style: none;
+    padding: 10px;
+}
+
+.main-nav a {
+    text-decoration: none;
+    color: white;
+    font-weight: 400;
+    border: 10px;
+}
+
+.mobile-nav-icon {
+    color: #0a7ee5;
+    font-size: 50px;
+}
+
+.item-hero-text-box {
+    grid-area: text;
+    padding: 20px;
+}
+/* .hero-text-box {
+    position: absolute;
+    width: 100vw;
+    top: 75%;
+    left: 5%;
+    transform: translate(-5%, -75%);
+} */
+
+header h1,p {
+    color: white;
+    text-shadow: 2px 2px 3px rgb(37, 37, 37);
+}
+
+header h1{
+    margin-bottom: 0;
+}
+
+header p{
+    font-size: 1.5rem;
+    font-weight: 400;
+    margin-bottom: 40px;
+}
+
+.btn {
+    /* margin: 50px; */
+    padding: 13px;
+    color: white;
+    text-decoration: none;
+    border: 2px solid #0a7ee5;
+    font-weight: 400;
+}
+
+.btn-full {
+    background-color: #0a7ee5;
+}
+
+.btn-empty {
+    color: #0a7ee5;
+    
+    /* text-shadow: 3px 3px 5px black; */
+    background-color: rgb(0, 0, 0, 50%);
+}
+
+/* ----------------------------------------------- */
+/* PAGE Empresas - SECTION 1 (Início) */
+/* ----------------------------------------------- */
 .empresa-header-subtitulo{
     font-size: 20px;
     margin-top: 8px;
@@ -41,6 +155,9 @@ section {
     padding: 80px 0;
 }
 
+/* ----------------------------------------------- */
+/* PAGE Empresas - SECTION 2 (Planos) */
+/* ----------------------------------------------- */
 .empresas-sobre-texto{
     font-size: 18px;
     margin-top:10px;
@@ -89,7 +206,3 @@ section {
     display: list-item;
     line-height: 60px;
 }
-
-/* ----------------------------------------------- */
-/* Seção <num>: <title>*/
-/* ----------------------------------------------- */
