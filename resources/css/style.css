@@ -23,7 +23,7 @@
 }
 
 html, body {
-    background-color: #fff; /*Define a cor do fundo*/
+    background-color: #FFF; /*Define a cor do fundo*/
     color: #555;
     font-family: 'Lato', 'Arial', sans-serif; /*a terceira opção é qualquer fonte daquela família, note que o nome da família não esta entre aspas.*/
     font-weight: 300; /*de acordo com a fonte que importamos*/
@@ -55,6 +55,26 @@ html, body {
       "text .";
       
     
+}
+
+
+
+.container-empresa-info{
+    /* height: 100vh; */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+        "section"
+        "section"
+        "section"
+    ;
+}
+
+.item-section{
+    grid-area: section;
+    padding: 20px;
 }
 
 .logo {
@@ -108,7 +128,7 @@ html, body {
     transform: translate(-5%, -75%);
 } */
 
-header h1,p {
+header h1 {
     color: white;
     text-shadow: 2px 2px 3px rgb(37, 37, 37);
 }
@@ -147,12 +167,17 @@ header p{
 /* PAGE Empresas - SECTION 1 (Início) */
 /* ----------------------------------------------- */
 .empresa-header-subtitulo{
-    font-size: 20px;
+    /* font-size: 20px; */
     margin-top: 8px;
 }
 
 section {
     padding: 80px 0;
+}
+
+.botao-centralizado{
+    display: flex;
+    justify-content: center;
 }
 
 /* ----------------------------------------------- */
@@ -164,13 +189,9 @@ section {
 }
 .formacoes-botao-plano{
     z-index: 100;
-    margin-top: -20px;
-    padding-top: 50px;
-    padding-bottom: 50px;
-    padding: 14px 30px;
-    position: absolute;
+    padding: 15px 15px;
     text-decoration: none;
-    font-size: 12px;
+    font-size: 14px;
     font-weight: bold;
     text-transform: uppercase;
     color: #2a7ae4;
@@ -181,28 +202,19 @@ section {
     box-shadow: 0 2px 7px 0 rgba(43,107,177,.37);
 }
 
-.icons{
-    font-size: 40px;
-    list-style-type: none;
-    height: 60px;
+.texto-apresentacao{
+    margin-bottom: 20px;
 }
 
-.planos-empresas{
-    margin-left: 25%;
-    float: left;
+.tabela-curso table td:nth-child(2){
+    text-align: center;
 }
-
-.planos-empresas2{
-    margin-left: 25%;
+.tabela-curso{
+    width: 80%;
+    display: flex;
+    justify-content: center;
 }
-.cursos{
-    height: 60px;
-    font-size: 20px;
-}
-
-.planos{
-    height: 60px;
-    font-size: 20px;
-    display: list-item;
-    line-height: 60px;
+.tabela-curso table td, th{
+    padding-bottom: 15px;
+    font-weight: 1000;
 }
