@@ -5,8 +5,6 @@
         
         <!-- Importação do normalize css para arrumar bugs -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
-        <!-- Importação do sistema de grid -->
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
         <!-- Importação do nossa folha de estilo -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <!-- Importação da fonte Lato -->
@@ -57,56 +55,52 @@
                 <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
         </header>
-
-        <section id="empresa" class="empresa-section-features">
-            <div class="row">
-                <h1>Capacite toda sua equipe e obtenha melhores resultados</h1>
-                <h2 class="empresa-header-subtitulo">
-                    <br>Os colaboradores são o maior patrimônio de uma empresa, invista em seu time!<br>
-                    Um time alinhado em conhecimentos entrega melhores resultados em menos tempo.<br><br><br>
-                </h2>
-                <a href="#" class="formacoes-botao-plano">quero investir em meu time</a>
-            </div>
-            <section id="empresa1" class="empresa-section-features">
-                <div class="row">
-                    <div class="col span-2-of-4 box">
-                        <h3>Conteúdo Próprio</h3>
-                        <p class="empresas-sobre-texto">
-                            Nosso conteúdo é fruto de muitos anos de experiência que nos permite criar cursos 100% alinhados com o mercado.
-                            <br>Todos os cursos são desenvolvidos para atender os desafios do dia-a-da nos projetos de software.
-                        </p>
-                    </div>                    
-                    <div class="col">
-                        <img src="./resources/img/conteudo_proprio.jpg" alt="conteudo proprio" title="conteudo proprio">
+        <div class="container-empresa-info">
+            <section id="empresa" class="item-section">
+                <div class="texto-apresentacao">
+                    <h1>Capacite toda sua equipe e obtenha melhores resultados</h1>
+                    <p>
+                        Os colaboradores são o maior patrimônio de uma empresa, invista em seu time!<br>
+                        Um time alinhado em conhecimentos entrega melhores resultados em menos tempo.
+                    </p>
+                </div>
+                    <div class="botao-centralizado">
+                        <a href="#" class="formacoes-botao-plano">quero investir em meu time</a>
                     </div>
                 </div>
-        </section>
-        <section id="planos">
-            <div class="row">
-                <div class="row">
-                    <ul class="planos-empresas">
-                        <li class="cursos">Cursos</li>
-                        <li class="planos">Acesso às formações</li>
-                        <li class="planos">Avaliação de desempenho</li>
-                        <li class="planos">Criação de planos de estudos</li>
-                        <li class="planos">Análise de engajamento</li>
-                        <li class="planos">Gestão de conta dedicada</li>
-                        <li class="planos">Acesso à API</li>
-                        <li class="planos">Controle de acesso em Planos de Estudo</li>
-                    </ul>
-                    <ul class="planos-empresas2">
-                        <li class="icons">1150</li>
-                        <li class="icons"><ion-icon name="checkbox-outline"></ion-icon></li>
-                        <li class="icons"><ion-icon name="checkbox-outline"></ion-icon></li>
-                        <li class="icons"><ion-icon name="checkbox-outline"></ion-icon></li>
-                        <li class="icons"><ion-icon name="checkbox-outline"></ion-icon></li>
-                    </ul>
+            </section>
+            <section id="empresa1" class="item-section">
+                    <div class="">
+                        <div class="">
+                            <h2>Conteúdo Próprio</h2>
+                            <p>
+                                Nosso conteúdo é fruto de muitos anos de experiência que nos permite criar cursos 100% alinhados com o mercado.
+                                <br>Todos os cursos são desenvolvidos para atender os desafios do dia-a-da nos projetos de software.
+                            </p>
+                        </div>                    
+                        <div class="botao-centralizado">
+                            <img src="./resources/img/conteudo_proprio.jpg" alt="conteudo proprio" title="conteudo proprio" class="img-empresa">
+                        </div>
+                    </div>
+            <section id="planos" class="item-section">
+                <h2>Planos</h2>
+                <div class="tabela-curso">
+                    <table>
+                        <tr><th></th><th>Plano Basico</th></tr>
+                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
+                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
+                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
+                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
+                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
+                        <tr><td></td><td>R$129,90</td></tr>
+                    </table>
                 </div>
-                <div class="row">
-                   
-                </div>
-            </div>
-        </section>
+            </section>
+        </div>
+
 
 
         <script src="vendors/js/jquery.waypoints.min.js">
