@@ -128,7 +128,7 @@ html, body {
     transform: translate(-5%, -75%);
 } */
 
-header h1 {
+header h1, header p {
     color: white;
     text-shadow: 2px 2px 3px rgb(37, 37, 37);
 }
