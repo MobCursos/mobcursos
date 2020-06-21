@@ -6,12 +6,16 @@
         <!-- Importação do normalize css para arrumar bugs -->
         <link rel="stylesheet" type="text/css" href="vendors/css/normalize.css">
         <!-- Importação do sistema de grid -->
-        <link rel="stylesheet" type="text/css" href="vendors/css/grid.css">
+        <!-- <link rel="stylesheet" type="text/css" href="vendors/css/grid.css"> -->
         <!-- Importação do nossa folha de estilo -->
         <link rel="stylesheet" type="text/css" href="resources/css/style.css">
         <!-- Importação da fonte Lato -->
-        
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
+  
+        <!-- Swiper - Slider -->
+        <!-- https://swiperjs.com/api/ -->
+        <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
+        <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         
         <!-- Meta tag viewport, que é importante quando desenvolvemos sites responsivos, 
         pois previne que os smartphones dêem zoom out na página, ou seja, 
@@ -21,21 +25,21 @@
         <!-- Importação do nossa folha de estilo de media queries -->
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
 
+        
+        <!-- JQuery -->
+        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+
         <!-- Retrocompatibilidade com navegadores antigos -->
         <!-- Para os navegadores antigos entender/suportarem Media Query https://www.jsdelivr.com/package/npm/respond.js?path=cross-domain -->
+        <!-- <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script> -->
 
-        <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script>
         <!-- Suporte à HTML5 sectioning tags para navegadores existentes antes do HTML5 (Internet Explorer 6-9, Safari 4.x (iPhone 3.x), e Firefox 3.x.) https://www.jsdelivr.com/package/npm/html5shiv -->
-
         <script src="https://cdn.jsdelivr.net/npm/html5shiv@3.7.3/dist/html5shiv.min.js"></script>
-        <!-- Emula pseudo-classes (ex. lastchild) do CSS3 no IE 6-8 https://www.jsdelivr.com/package/npm/selectivizr2 -->
 
+        <!-- Emula pseudo-classes (ex. lastchild) do CSS3 no IE 6-8 https://www.jsdelivr.com/package/npm/selectivizr2 -->
         <script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
 
-        <!-- JQuery -->
-        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>  
-
-        <title>MobCursos</title>
+        <title>mobCursos</title>
     </head>
     <body>
         <header id="home" class="container-hero-header">
@@ -58,7 +62,7 @@
                 <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
             <div class="item-hero-text-box">
-                <h1>MobCursos</h1>
+                <h1>mobCursos</h1>
                 <p>Cursos online de TI</p>
                 <a class="btn btn-full" href="login.html">Entrar</a>
                 <a class="btn btn-empty" href="#">Criar conta</a>
@@ -66,14 +70,48 @@
 
         </header>
      
-        <section>
-            
+        <section id="cursos-destaque" class="container-padrao container-cursos-destaque">
+            <h2>Cursos em destaque</h2>
+            <div class="item-cursos-destaque swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+                    
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
         </section>
 
         <footer class="container-footer">
-            <p>Copyright &copy; 2020 - MobCursos. Todos os direitos reservados.</p>
+            <p>Copyright &copy; 2020 - mobCursos. Todos os direitos reservados.</p>
         </footer>
 
+
+        <!-- Waippoint - used in nav -->
         <script src="vendors/js/jquery.waypoints.min.js">
             var waypoint = new Waypoint({
                 element: document.getElementById('waypoint'),
@@ -82,11 +120,34 @@
                 }
             })
         </script>
-    
-        <!-- Importa o meu arquivo js -->
-        <script src="resources/js/script.js"></script>
 
-        <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        <!-- Importa o arquivo js do projeto-->
+        <script type="text/javascript" src="resources/js/script.js"></script>
+
+        <!-- IonIcons -->
+        <script type="text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+        <!-- Swiper - Slider -->
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper ('.swiper-container', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+          
+              // Pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+          
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }
+            })
+            </script>
 
     </body>
  </html>
