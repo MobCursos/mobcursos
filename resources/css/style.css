@@ -32,8 +32,12 @@ html, body {
     overflow-x: hidden; /*faz sumir a barra de rolagem horizontal*/
 }
 
-.container-padrao {
-    padding: 20px
+/* .container-padrao {
+    padding: 20px;
+} */
+
+section h2 {
+    padding: 20px;
 }
 
 /* ----------------------------------------------- */
@@ -120,11 +124,11 @@ header h1, header p {
     text-shadow: 2px 2px 3px rgb(37, 37, 37);
 }
 
-header h1{
+header h1 {
     margin-bottom: 0;
 }
 
-header p{
+header p {
     font-size: 1.5rem;
     font-weight: 400;
     margin-bottom: 40px;
@@ -155,25 +159,58 @@ header p{
 /* ----------------------------------------------- */
 
 .container-cursos-destaque {
-    background-color: rgb(240, 240, 240);
+    background-color: rgb(255, 255, 255);
     height: 100vh;
+    /* width: 100vw;  */
 
     display: grid;
     grid-template-columns: auto;
-    grid-template-rows: 20vh 80vh;
+    grid-template-rows: 20vh auto;
     grid-template-areas: 
       "title"
       "card";
 }
 
-.container-cursos-destaque h1 {
+.container-cursos-destaque h2 {
     grid-area: title;
 }
 
 .item-cursos-destaque {
+    /* padding: 0px; */
     grid-area: card;
+    /* background-color: rgb(99, 99, 99); */
 }
 
+/* Swiper - Slider */
+
+.swiper-container {
+    width: 100vw;
+    /* height: 80%;  */
+}
+
+.swiper-slide {
+    /* height: 20vh; */
+
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+.swiper-slide div {
+    /* background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 3px rgb(185, 185, 185);
+    max-width: 80%; */
+}
+.swiper-slide img {
+    padding: 40px 0;
+    max-width: 250px;
+}
 
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 1 (Início) */
@@ -195,10 +232,6 @@ header p{
 .empresa-header-subtitulo{
     /* font-size: 20px; */
     margin-top: 8px;
-}
-
-section {
-    padding: 80px 0;
 }
 
 .botao-centralizado{
@@ -260,28 +293,3 @@ section {
 
 
 
-/* Swiper - Slider */
-
-.swiper-container {
-    width: 90vw;
-    height: 80%; 
-}
-
-.swiper-slide {
-    /* height: 60vh; */
-
-    text-align: center;
-    font-size: 18px;
-    /* background: #fff; */
-
-    /* Center slide text vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-.swiper-slide img {
-    padding: 40px 0;
-    max-width: 250px;
-}
