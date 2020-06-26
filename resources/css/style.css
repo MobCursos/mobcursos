@@ -66,7 +66,6 @@ section h2 {
 
 .item-section{
     grid-area: section;
-    padding: 20px;
 }
 
 .logo {
@@ -282,12 +281,14 @@ header p {
     text-align: center;
 }
 .tabela-curso{
-    width: 80%;
+    width: 100%;
     display: flex;
     justify-content: center;
+    padding: 10px;
 }
 .tabela-curso table td, th{
     padding-bottom: 15px;
+    padding-right: 20px;
     font-weight: 1000;
 }
 
@@ -303,8 +304,6 @@ header p {
     color: #0a7ee5
 }
 
-<<<<<<< HEAD
-  
   *{
       margin: 0;
       padding: 0;
@@ -462,7 +461,6 @@ header p {
       background: #3371B6;
   }
 
-=======
 
 
 /* ----------------------------------------------- */
@@ -486,7 +484,6 @@ header p {
     justify-content: center;
     align-items: center;
 }
->>>>>>> f3710f6f68a20c4a124274e1c6b00ec9c13a7d27
 
 
 
