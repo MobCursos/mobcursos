@@ -292,9 +292,8 @@ header p {
     font-size: 40px;
 }
 
-
 #planos {
-    background-color: honeydew;
+    background-color: rgb(235, 235, 235);
 }
 
 #planos h3 {
@@ -303,10 +302,27 @@ header p {
 
 
 
+/* ----------------------------------------------- */
+/* PAGE "Todas" - SECTION (Footer) */
+/* ----------------------------------------------- */
+.container-footer {
+    padding: 20px;
+    color: white;
+    background-color: rgb(80, 80, 80);
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas: 
+      "footer";
+}
 
-
-
-
+.item-footer {
+    grid-area: footer;
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-items: center;
+}
 
 
 
