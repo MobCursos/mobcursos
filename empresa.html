@@ -26,7 +26,9 @@
        
         <!-- JQuery -->
         <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+        <link rel="stylesheet" href="http://code.jquery.com/ui/1.9.0/themes/base/jquery-ui.css" />
+        <script src="http://code.jquery.com/jquery-1.8.2.js"></script>
+        <script src="http://code.jquery.com/ui/1.9.0/jquery-ui.js"></script>
         <!-- Retrocompatibilidade com navegadores antigos -->
         <!-- Para os navegadores antigos entender/suportarem Media Query https://www.jsdelivr.com/package/npm/respond.js?path=cross-domain -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script> -->
@@ -90,18 +92,48 @@
                 <h2>Planos</h2>
                 <div class="tabela-curso">
                     <table>
-                        <tr><th></th><th>Plano Basico</th></tr>
-                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
-                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
-                        <tr><td></td><td>R$129,90</td></tr>
+                        <tr><th></th><th>Basico</th><th>Premium</th></tr>
+                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td></td><td>129,90</td><td>250,00</td></tr>
                     </table>
                 </div>
+            </section>
+            <section class="form_wrap">
+                <form action="" class="form_contact">
+                    <h5>CONTATO</h5>
+                    <div class="user_info">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome">
+        
+                        <label for="fone">Telefone *</label>
+                        <input type="text" id="fone">
+
+                        <label for="celular">Celular</label>
+                        <input type="text" id="celular">
+        
+                        <label for="email">E-mail *</label>
+                        <input type="text" id="email">
+
+                        <label for="email2">E-mail Secundário</label>
+                        <input type="text" id="email2">
+
+                        <label for="dataContato">Data de Contato*</label>
+                        <input type="text" id="dataContato">
+        
+                        <label for="mensagem">Mensagem </label>
+                        <textarea id="mensagem"></textarea>
+        
+                        <input type="button" value="Enviar" id="enviar">
+                    </div>
+                </form>
+        
             </section>
         </div>
 

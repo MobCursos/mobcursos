@@ -79,3 +79,7 @@ $(document).ready(function(){
   // })
   
 });
+
+$(function() {
+  $( "#dataContato" ).datepicker();
+});
