@@ -11,12 +11,13 @@
 }
 
 @media only screen and (max-width: 480px){
-    h1{
-        font-size: 35px;
-    }
+
 
     .img-empresa{
-        max-height: 330px;
+        max-height: 260px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+
     }
 
     .empresa-header-subtitulo{
