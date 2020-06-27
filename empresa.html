@@ -25,8 +25,10 @@
         <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
        
         <!-- JQuery -->
-        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+       <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        <link rel="stylesheet" href="vendors/css/styles.css" />
+        <script src="vendors/js/code.min.js"></script>
+        <script src="vendors/js/code.min-jquery.js"></script>
         <!-- Retrocompatibilidade com navegadores antigos -->
         <!-- Para os navegadores antigos entender/suportarem Media Query https://www.jsdelivr.com/package/npm/respond.js?path=cross-domain -->
         <!-- <script src="https://cdn.jsdelivr.net/npm/respond.js@1.4.2/cross-domain/respond.proxy.min.js"></script> -->
@@ -53,6 +55,8 @@
                         <li><a href="index.html">Home</a></li>
                         <li><a href="login.html">Entrar</a></li>
                         <li><a href="#header-empresa">Empresas</a></li>
+                        <li><a href="#planos">Planos</a></li>
+                        <li><a href="#contato">Contato</a></li>
                         <li><a href="formacao.html">Formações</a></li>
                     </ul>
                 </div>
@@ -69,7 +73,7 @@
                     </p>
                 </div>
                     <div class="botao-centralizado">
-                        <a href="#" class="formacoes-botao-plano">quero investir em meu time</a>
+                        <a href="#planos" class="formacoes-botao-plano">quero investir em meu time</a>
                     </div>
                 </div>
             </section>
@@ -86,25 +90,67 @@
                             <img src="./resources/img/conteudo_proprio.jpg" alt="conteudo proprio" title="conteudo proprio" class="img-empresa">
                         </div>
                     </div>
+            </section>
             <section id="planos" class="item-section">
-                <h2>Planos</h2>
+                <h2>Planos Empresariais</h2>
                 <div class="tabela-curso">
                     <table>
-                        <tr><th></th><th>Plano Basico</th></tr>
-                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td></tr>
-                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
-                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td></tr>
-                        <tr><td></td><td>R$129,90</td></tr>
+                        <tr><th></th><th>Basico</th><th>Premium</th></tr>
+                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                        <tr><td></td><td>129,90</td><td>250,00</td></tr>
                     </table>
                 </div>
             </section>
-        </div>
+            <section id="contato" class="form_wrap">
+                <form action="" class="form_contact">
+                    <h5>CONTATO</h5>
+                    <div class="user_info">
+                        <label for="nome">Nome *</label>
+                        <input type="text" id="nome">
+        
+                        <label for="fone">Telefone *</label>
+                        <input type="tel" id="fone">
 
+                        <label for="celular">Celular</label>
+                        <input type="tel" id="celular">
+        
+                        <label for="email">E-mail *</label>
+                        <input type="email" id="email">
+
+                        <label for="email2">E-mail Secundário</label>
+                        <input type="email" id="email2">
+
+                        <label for="dataContato">Data de Contato*</label>
+                        <input type="text" id="dataContato">
+        
+                        <label for="mensagem">Mensagem </label>
+                        <textarea id="mensagem"></textarea>
+        
+                        <input type="button" value="Enviar" id="enviar">
+                    </div>
+                </form>
+        
+            </section>
+        </div>
+        <footer class="container-footer">
+            <div class="item-icons">
+                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+                <ion-icon name="logo-instagram" id="logo-instagram"></ion-icon>
+                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
+                <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
+            </div>
+            <div class="item-footer">
+                <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
+           </div>
+        </footer>
 
 
         <script src="vendors/js/jquery.waypoints.min.js">
