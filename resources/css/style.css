@@ -36,9 +36,11 @@ html, body {
     padding: 20px;
 } */
 
-section h2 {
+section h1,section h2, section p {
     padding: 20px;
 }
+
+
 
 /* ----------------------------------------------- */
 /* PAGE Index - SECTION 1 (Início) */
@@ -238,6 +240,10 @@ header p {
     ;
 }
 
+#empresa1{
+    margin-top: 1rem;
+}
+
 .empresa-header-subtitulo{
     /* font-size: 20px; */
     margin-top: 8px;
@@ -274,10 +280,15 @@ header p {
     margin-bottom: 20px;
 }
 
-.tabela-curso table td:nth-child(3){
-    text-align: center;
+.texto-apresentacao h1{
+ font-size: 2.1em;   
 }
-.tabela-curso table td:nth-child(2){
+
+.texto-apresentacao p, #empresa1 p{
+    font-weight: 550;
+}
+
+.tabela-curso table td:nth-child(2), .tabela-curso table td:nth-child(3){
     text-align: center;
 }
 .tabela-curso{
@@ -317,7 +328,7 @@ header p {
   /* FORMULARIO =================================== */
   
   .form_wrap{
-      width: 420px;
+      width: 95%;
       height: 640px;
       margin: 50px auto;
       display: flex;
