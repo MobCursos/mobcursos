@@ -83,3 +83,12 @@ $(document).ready(function(){
 $(function() {
   $( "#dataContato" ).datepicker();
 });
+
+var width = screen.availHeight;
+if(width > 480){
+  $("#js-item-footer-small").css("display", "none");
+  $("#js-item-footer-medium").css("display","");
+}else{
+  $("#js-item-footer-medium").css("display", "none");
+  $("#js-item-footer-small").css("display","");
+}
