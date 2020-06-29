@@ -3,7 +3,7 @@
         font-size: 4.1em;
        }
 
-       section p{
+    section p{
         font-size: 35px;
      }
 
@@ -57,6 +57,14 @@
         margin-top: 20px;
         padding-bottom: 10px;
 
+    }
+
+    .item-section p{
+        font-size: 24px;
+    }
+
+    #empresa1 h2{
+        font-size: 2rem;
     }
 
     .empresa-header-subtitulo{
