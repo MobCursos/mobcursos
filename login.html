@@ -43,7 +43,7 @@
         <title>Login</title>
     </head>
     <body>
-        <header id="header-login">
+        <div class="container-login">
             <nav class="item-nav">
                 <div class="flex-responsive-nav">
                     <a class="mobile-nav-icon js--mobile-nav-icon">
@@ -57,21 +57,48 @@
                 
                 <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
+            <section class="item-login">
+                <h2>Acesse sua conta</h2>
+                <form action="#">
+                    <div class="form-login-flex">
+                        <div class="form-login-flex-inputs">            
+                            <label for="login-nome">Email</label>
+                            <input type="text" id="login-nome">
+                        </div>
+                        <div class="form-login-flex-inputs">
+                            <label for="login-password">Senha</label>
+                            <input type="password" id="login-password">
+                        </div>
+                        <div class="form-login-flex-forget">
+                            <div class="form-login-flex-forget-item">
+                            <label for="login-forget-pass">Esqueci a senha</label>
+                            <input type="checkbox" id="checkbox-forget">
+                            </div>
+                        </div>
+                    
+                    <div>
+                        <a class="btn btn-full" href="login.html">Entrar</a>
+                    </div> 
+                </div>  
+                </form>
+            </section>
 
-        </header>
+            <footer class="container-footer">
+                <div class="item-icons">
+                    <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
+                    <ion-icon name="logo-instagram" id="logo-instagram"></ion-icon>
+                    <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
+                    <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
+                    <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
+                </div>
+                <div class="item-footer">
+                    <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
+               </div>
+            </footer>
+
+        </div>
         
-        <footer class="container-footer">
-            <div class="item-icons">
-                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram" id="logo-instagram"></ion-icon>
-                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
-                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
-            </div>
-            <div class="item-footer">
-                <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
-           </div>
-        </footer>
+        
 
         <script src="vendors/js/jquery.waypoints.min.js">
             var waypoint = new Waypoint({
