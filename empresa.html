@@ -12,7 +12,6 @@
         <link href="https://fonts.googleapis.com/css?family=Lato:100,300,300i,400&amp;subset=latin-ext" rel="stylesheet">
   
         <!-- Swiper - Slider -->
-        <!-- https://swiperjs.com/api/ -->
         <!-- <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.css"> -->
         <link rel="stylesheet" href="https://unpkg.com/swiper/css/swiper.min.css">
         
@@ -20,9 +19,6 @@
         pois previne que os smartphones dêem zoom out na página, ou seja, 
         sempre iniciar com escala 1.0 --> 
         <meta name="viewport" content="with=device-width, initial-scale=1.0">
-
-        <!-- Importação do nossa folha de estilo de media queries -->
-        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
        
         <!-- JQuery -->
        <script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
@@ -39,7 +35,7 @@
         <!-- Emula pseudo-classes (ex. lastchild) do CSS3 no IE 6-8 https://www.jsdelivr.com/package/npm/selectivizr2 -->
         <script src="https://cdn.jsdelivr.net/npm/selectivizr2@1.0.9/selectivizr2.min.js"></script>
 
-        <!-- Importação da folha de estilo customizada -->
+        <link rel="stylesheet" type="text/css" href="resources/css/queries.css">
         <link rel="stylesheet" type="text/css" href="resources/css/style.css"> 
 
         <title>Empresas</title>
@@ -94,17 +90,19 @@
             <section id="planos" class="item-section">
                 <h2>Planos Empresariais</h2>
                 <div class="tabela-curso">
-                    <table>
-                        <tr><th></th><th>Basico</th><th>Premium</th></tr>
-                        <tr><td>Cursos</td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Acesso às formações</td><td ><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Avaliação de desempenho</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Criação de planos de estudos</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Análise de engajamento</td><td><ion-icon name="checkbox-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Gestão de conta dedicada</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Acesso à API</td><td><ion-icon name="square-outline"></ion-icon></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td>Controle de acesso em Planos de Estudo</td><td><ion-icon name="square-outline"></ion-icon></td><td class=><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
-                        <tr><td></td><td>129,90</td><td>250,00</td></tr>
+                    <table class="table">
+                        <tbody class="table-hover">
+                            <tr><th class="text-left"></th><th class="text-left">Basico</th><th class="text-left">Premium</th></tr>
+                            <tr><td class="text-left">Cursos</td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Acesso às formações</td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Avaliação de desempenho</td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Criação de planos de estudos</td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Análise de engajamento</td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Gestão de conta dedicada</td><td class="text-left"><ion-icon name="square-outline"></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Acesso à API</td><td class="text-left"><ion-icon name="square-outline"></ion-icon></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left">Controle de acesso em Planos de Estudo</td><td class="text-left"><ion-icon name="square-outline"></ion-icon></td><td class="text-left"><ion-icon name="checkbox-outline"></ion-icon></ion-icon></td></tr>
+                            <tr><td class="text-left"></td><td class="text-left">129,90</td><td class="text-left">250,00</td></tr>
+                        </tbody>
                     </table>
                 </div>
             </section>
