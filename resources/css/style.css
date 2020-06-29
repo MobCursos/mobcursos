@@ -60,7 +60,7 @@ section h2{
 
     display: grid;
     grid-template-columns: auto auto;
-    grid-template-rows: 33vh 33vh 33vh; /*Também impede nav bar empurrar para baixo itens desta section*/
+    grid-template-rows: 10vh auto 40vh; /*Também impede nav bar empurrar para baixo itens desta section*/
     grid-template-areas: 
       "nav nav"
       ". ."
@@ -605,17 +605,22 @@ th {
 
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: auto auto auto;
+    grid-template-rows: 10vh auto 20vh;  /*Height de footer: Cuidar em media queries. Usado na pagina login*/
     grid-template-areas:
       "nav nav nav"
-      ". login-rrr ."
-      "teste-footer-em-pagina-unica-section teste-footer-em-pagina-unica-section teste-footer-em-pagina-unica-section";
+      ". login ."
+      "login-footer login-footer login-footer";
 }
-
 
 .item-login {
-    grid-area: login-rrr;
+    grid-area: login;
 }
+
+/*todo: verificar padronizacao em outras sections*/
+.item-login h2 {
+    text-align: center;
+}
+
 
 .form-login-flex {
     /* width: 100%; */
@@ -662,14 +667,14 @@ th {
 }
 
 .form-login-flex-forget div {
-    margin-bottom: 40px;
+    margin-bottom: 20px;
 }
 
 /* ----------------------------------------------- */
 /* PAGE "Todas" - SECTION (Footer) */
 /* ----------------------------------------------- */
 .container-footer {
-    grid-area: teste-footer-em-pagina-unica-section;
+    grid-area: login-footer;
     padding: 20px;
     color: white;
     background-color: rgb(80, 80, 80);
