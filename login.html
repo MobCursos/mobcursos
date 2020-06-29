@@ -43,7 +43,7 @@
         <title>Login</title>
     </head>
     <body>
-        <header id="header-login">
+        <section class="container-login">
             <nav class="item-nav">
                 <div class="flex-responsive-nav">
                     <a class="mobile-nav-icon js--mobile-nav-icon">
@@ -57,8 +57,33 @@
                 
                 <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
+            <div class="item-login">
+                <h2>Acesse sua conta</h2>
+                <form action="#">
+                    <div class="form-login-flex">
+                        <div class="form-login-flex-inputs">            
+                            <label for="login-nome">Email</label>
+                            <input type="text" id="login-nome">
+                        </div>
+                        <div class="form-login-flex-inputs">
+                            <label for="login-password">Senha</label>
+                            <input type="password" id="login-password">
+                        </div>
+                        <div class="form-login-flex-forget">
+                            <div class="form-login-flex-forget-item">
+                            <label for="login-forget-pass">Esqueci a senha</label>
+                            <input type="checkbox" id="checkbox-forget">
+                            </div>
+                        </div>
+                    
+                    <div>
+                        <a class="btn btn-full" href="login.html">Entrar</a>
+                    </div> 
+                </div>  
+                </form>
+            </div>
 
-        </header>
+        </section>
         
         <footer class="container-footer">
             <div class="item-icons">
