@@ -44,6 +44,10 @@ section h2{
     font-size: 2rem;
 }
 
+.font-color-mobcursos {
+    color: #0a7ee5;
+}
+
 /* ----------------------------------------------- */
 /* PAGE Index - SECTION 1 (Início) */
 /* ----------------------------------------------- */
@@ -155,31 +159,48 @@ section h2{
 }
 
 /* ----------------------------------------------- */
-/* PAGE Index - SECTION 2 (Cursos em Destaque) */
+/* PAGE Index - SECTION 2 (Galeria) */
 /* ----------------------------------------------- */
 
-.container-cursos-destaque {
+.container-galeria {
     background-color: rgb(255, 255, 255);
-    height: 100vh;
-    /* width: 100vw;  */
+    /* height: 100vh; */
+    /* max-width: 80px;  */
+    padding: 20px;
 
-    display: grid;
+    /* display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "title"
-      "card";
+    grid-template-rows: auto;
+    grid-template-areas:
+      "foto"; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      /* justify-items: center;
+      align-items: center; */
+      justify-content: space-between;
 }
 
-.container-cursos-destaque h2 {
+/* .container-galeria h2 {
     grid-area: title;
+} */
+
+.item-galeria {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    /* grid-area: foto; */
+    /* background-color: rgb(99, 99, 99); */
+    
 }
 
-.item-cursos-destaque {
-    /* padding: 0px; */
-    grid-area: card;
-    /* background-color: rgb(99, 99, 99); */
+.item-galeria img {
+    max-width: 100%;
 }
+
+/* ----------------------------------------------- */
+/* PAGE Index - SECTION 3 (Planos) */
+/* ----------------------------------------------- */
 
 /* Swiper - Slider */
 
@@ -216,11 +237,6 @@ section h2{
 .swiper-slide p {
     padding: 20px
 }
-
-/* ----------------------------------------------- */
-/* PAGE Index - SECTION 3 (Planos) */
-/* ----------------------------------------------- */
-
 
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 1 (Início) */
@@ -621,53 +637,89 @@ th {
     text-align: center;
 }
 
-
 .form-login-flex {
-    /* width: 100%; */
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
-    align-items: center;
-}
-
-.form-login-flex label {
-    font-weight: 400;
+    align-items: center; /*usa largura do item se width estiver ou não em 100%. Pra esticar, usar stretch*/
+    
 }
 
 .form-login-flex input {
-    /* width: 100%; */
     padding: 3px 0px 5px;
     margin-bottom: 20px;
-
     border: none;
-    /* border-bottom: 2px solid #D1D1D1; */
-
-    /* font-family: '';
-    color: #5A5A5A;
-    font-size: 14px;
-    font-weight: 400; */
-}
-
-.form-login-flex-inputs {
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    /* align-items: baseline; */
-
 }
 
 .form-login-flex-forget {
-    /* width: 80%; */
     font-size: 80%;
     display: flex;
     flex-direction: row;
-    justify-content: flex-end;
     align-items: baseline;
-
 }
 
-.form-login-flex-forget div {
-    margin-bottom: 20px;
+
+
+/* ----------------------------------------------- */
+/* PAGE Cursos - Formações - SECTION 1 (Cursos) */
+/* ----------------------------------------------- */
+
+.container-cursos-formacao {
+    background-color: rgb(255, 255, 255);
+    height: 100vh;
+    /* width: 100vw;  */
+
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "title"
+      "card";
+}
+
+.container-cursos-formacao h2 {
+    grid-area: title;
+}
+
+.item-cursos-formacao {
+    /* padding: 0px; */
+    grid-area: card;
+    /* background-color: rgb(99, 99, 99); */
+}
+
+/* Swiper - Slider */
+
+.swiper-container {
+    width: 100vw;
+    /* height: 80%;  */
+}
+
+.swiper-slide {
+    /* height: 20vh; */
+
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* .swiper-slide div { */
+    /* background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 3px rgb(185, 185, 185);
+    max-width: 80%; */
+/* } */
+
+.swiper-slide img {
+    padding: 40px 0;
+    max-width: 250px;
+}
+
+.swiper-slide p {
+    padding: 20px
 }
 
 /* ----------------------------------------------- */
