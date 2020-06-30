@@ -44,6 +44,10 @@ section h2{
     font-size: 2rem;
 }
 
+.font-color-mobcursos {
+    color: #0a7ee5;
+}
+
 /* ----------------------------------------------- */
 /* PAGE Index - SECTION 1 (Início) */
 /* ----------------------------------------------- */
@@ -174,7 +178,7 @@ section h2{
       flex-direction: row;
       /* justify-items: center;
       align-items: center; */
-      /* justify-content: space-between; */
+      justify-content: space-between;
 }
 
 /* .container-galeria h2 {
@@ -182,15 +186,16 @@ section h2{
 } */
 
 .item-galeria {
-    /* flex: 1; */
-    /* padding: 0px; */
+    display: flex;
+    align-items: center;
+    padding: 20px;
     /* grid-area: foto; */
     /* background-color: rgb(99, 99, 99); */
     
 }
 
 .item-galeria img {
-    max-width: 380px;
+    max-width: 100%;
 }
 
 /* ----------------------------------------------- */
