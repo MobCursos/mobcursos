@@ -56,12 +56,49 @@
                         <li><a href="#planos">Planos</a></li>
                         <li><a href="#depoimentos">Depoimentos</a></li>
                         <li><a href="empresa.html">Empresas</a></li>
-                        <li><a href="#header-formacao">Formações</a></li>
+                        <li><a href="#cursos-formacao">Formações</a></li>
                     </ul>
                 </div>
                 <img src="resources/img/logo-blue0.png" alt="logo MobCursos" class="logo">
             </nav>
         </header>
+
+        <section id="cursos-formacao" class="container-padrao container-cursos-formacao">
+            <h2>Cursos nas mais diversas formações das carreiras de TI</h2>
+            <div class="item-cursos-formacao swiper-container">
+                <div class="swiper-wrapper">
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+                    
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+
+                    <div class="swiper-slide">
+                        <h3>Web Design Responsivo</h3>
+                        <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Officiis sed dignissimos vel maxime distinctio doloribus ut, voluptatum qui suscipit ea. Odio minima expedita autem ipsam sapiente hic consequatur accusantium odit!</p>
+                        <img src="resources/img/web_design_responsivo.jpg">
+                        <img src="resources/img/rating-stars.png">
+                    </div>
+                    
+                </div>
+                <!-- Pagination -->
+                <div class="swiper-pagination"></div>
+
+                <!-- Navigation buttons -->
+                <div class="swiper-button-prev"></div>
+                <div class="swiper-button-next"></div>
+                
+            </div>
+        </section>
+
         <footer class="container-footer">
             <div class="item-icons">
                 <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
@@ -74,6 +111,7 @@
                 <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
            </div>
         </footer>
+
         <script src="vendors/js/jquery.waypoints.min.js">
             var waypoint = new Waypoint({
                 element: document.getElementById('waypoint'),
@@ -88,6 +126,28 @@
 
         <!-- IonIcons -->
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+
+        <!-- Swiper - Slider -->
+        <script src="https://unpkg.com/swiper/js/swiper.js"></script>
+        <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
+        <script>
+            var swiper = new Swiper ('.swiper-container', {
+              // Optional parameters
+              direction: 'horizontal',
+              loop: true,
+          
+              // Pagination
+              pagination: {
+                el: '.swiper-pagination',
+              },
+          
+              // Navigation arrows
+              navigation: {
+                nextEl: '.swiper-button-next',
+                prevEl: '.swiper-button-prev',
+              }
+            })
+        </script>
 
     </body>
  </html>
