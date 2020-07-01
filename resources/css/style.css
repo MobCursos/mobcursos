@@ -41,7 +41,7 @@ section h1,section h2, section p {
 }
 
 section h2{
-    font-size: 2rem;
+    font-size: 4rem;
 }
 
 .font-color-mobcursos {
@@ -189,6 +189,7 @@ section h2{
     display: flex;
     align-items: center;
     padding: 20px;
+    max-width: 30%;
     /* grid-area: foto; */
     /* background-color: rgb(99, 99, 99); */
     
@@ -300,11 +301,14 @@ section h2{
 }
 
 .texto-apresentacao h1{
- font-size: 2.1em;   
+ font-size: 4.5em;
+ padding: 20px;   
 }
 
 .texto-apresentacao p, #empresa1 p{
     font-weight: 550;
+    padding: 20px;   
+    font-size: 25px;
 }
 
 .table{
