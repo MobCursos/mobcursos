@@ -508,7 +508,7 @@ h3 {
 .container-galeria {
     background-color: rgb(255, 255, 255);
     /* height: 100vh; */
-    /* max-width: 80px;  */
+    /* width: 100vw;  */
     padding: 20px;
 
     /* display: grid;
@@ -519,9 +519,9 @@ h3 {
       display: flex;
       flex-wrap: wrap;
       flex-direction: row;
-      /* justify-items: center;
-      align-items: center; */
-      justify-content: space-between;
+      /* justify-items: center; */
+      /* align-items: center;  */
+      justify-content: center;
 }
 
 /* .container-galeria h2 {
@@ -529,17 +529,18 @@ h3 {
 } */
 
 .item-galeria {
+    
     display: flex;
     align-items: center;
     padding: 20px;
-    max-width: 30%;
+    /* max-width: 50%; */
     /* grid-area: foto; */
     /* background-color: rgb(99, 99, 99); */
     
 }
 
 .item-galeria img {
-    max-width: 100%;
+    max-width: 30vw;
 }
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 3 (Contato) */
