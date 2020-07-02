@@ -163,6 +163,10 @@ h3 {
     background-color: rgb(0, 0, 0, 50%);
 }
 
+.btn-white-transp-background {
+    background-color: rgba(255, 255, 255, 0.7);
+}
+
 
 /* ----------------------------------------------- */
 /* PAGE Index SECTION 2 (Cursos) */
@@ -219,7 +223,7 @@ h3 {
 /* } */
 
 .swiper-slide img {
-    /* padding: 40px 0; */
+    padding: 40px 0;
     max-width: 250px;
     max-height: 250px;
 }
@@ -234,41 +238,62 @@ h3 {
 /* PAGE Index - SECTION 3 (Planos) */
 /* ----------------------------------------------- */
 
-/* Swiper - Slider */
+.container-planos-individuais {
+    background-color: rgb(248, 248, 248);
+    height: 100vh;
+    /* width: 100vw;  */
 
-.swiper-container {
-    width: 100vw;
-    /* height: 80%;  */
+    display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: 10vh auto;
+    grid-template-areas: 
+      "title"
+      "card";
 }
 
-.swiper-slide {
-    /* height: 20vh; */
+.container-planos-individuais h2 {
+    grid-area: title;
+}
 
+.item-planos-individuais {
+    /* padding: 0px; */
+    grid-area: card;
+    /* background-color: rgb(99, 99, 99); */
+}
+
+.item-planos-individuais h3 {
+    padding-bottom: 20px;
+}
+
+.item-planos-individuais table {
+    width: 60vw;
+}
+
+.item-planos-individuais td {
+    padding: 5px;
+}
+
+.tabela-planos-individuais table td:nth-child(2), .tabela-curso table td:nth-child(3){
     text-align: center;
-    font-size: 18px;
-    /* background: #fff; */
-
-    /* Center slide text vertically */
+}
+.tabela-planos-individuais{
+    width: 100%;
     display: flex;
-    flex-direction: column;
     justify-content: center;
-    align-items: center;
-  }
-
-/* .swiper-slide div { */
-    /* background-color: rgb(238, 238, 238);
-    box-shadow: 1px 1px 3px rgb(185, 185, 185);
-    max-width: 80%; */
-/* } */
-
-.swiper-slide img {
-    padding: 40px 0;
-    max-width: 250px;
+    padding-bottom: 40px;
+}
+.tabela-planos-individuais table td, th{
+    padding-bottom: 15px;
+    padding-right: 20px;
+    font-weight: 1000;
 }
 
-.swiper-slide p {
-    padding: 20px
+.tabela-planos-individuais ion-icon {
+    font-size: 30px;
 }
+
+
+
 
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 1 (Início) */
