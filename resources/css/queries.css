@@ -1,4 +1,56 @@
-@media only screen and (max-width: 1200px){
+@media only screen and (min-width: 480px){
+    
+    /* .img-empresa{
+        max-height: 260px;
+        margin-top: 20px;
+        padding-bottom: 10px;
+
+    }
+
+    .item-section p{
+        font-size: 24px;
+    }
+
+    h2{
+        font-size: 2rem;
+    }
+
+    .empresa-header-subtitulo{
+        margin-left: 4px;
+    } */
+}
+
+@media only screen and (min-width: 767px){
+    .formacoes-botao-plano{
+     font-size: 18px;
+     box-shadow: 0 13px 16px 0 rgba(43,107,177,.37);
+    }
+
+    section p{
+     font-size: 24px;
+    }
+ 
+    .img-empresa{
+         max-height: 100%;
+    }
+ }
+
+ @media only screen and (min-width: 1023px){
+    .texto-apresentacao h1{
+        font-size: 3.1em;
+       }
+    
+    .texto-apresentacao p{
+       font-size: 25px;
+    }
+
+    h2{
+        text-align: center;
+        font-size: 3rem;
+    }
+}
+
+@media only screen and (min-width: 1200px){
     .texto-apresentacao h1{
         font-size: 4.1em;
        }
@@ -11,64 +63,12 @@
          font-size: 3rem;
      }
 
-     #empresa1 h2{
+     h2{
         text-align: center;
         font-size: 4rem;
     }
 
     .form_wrap{
         width: 50%;
-    }
-
-}
-
-@media only screen and (max-width: 1023px){
-    .texto-apresentacao h1{
-        font-size: 3.1em;
-       }
-    
-    .texto-apresentacao p{
-       font-size: 25px;
-    }
-
-    section h2{
-        text-align: center;
-        font-size: 3rem;
-    }
-}
-
-@media only screen and (max-width: 767px){
-   .formacoes-botao-plano{
-    font-size: 18px;
-    box-shadow: 0 13px 16px 0 rgba(43,107,177,.37);
-}
-
-   section p{
-    font-size: 24px;
-   }
-
-   .img-empresa{
-        max-height: 100%;
-   }
-}
-
-@media only screen and (max-width: 480px){
-    .img-empresa{
-        max-height: 260px;
-        margin-top: 20px;
-        padding-bottom: 10px;
-
-    }
-
-    .item-section p{
-        font-size: 24px;
-    }
-
-    #empresa1 h2{
-        font-size: 2rem;
-    }
-
-    .empresa-header-subtitulo{
-        margin-left: 4px;
     }
 }

@@ -40,8 +40,9 @@ section h1,section h2, section p {
     padding: 20px;
 }
 
-section h2{
-    font-size: 4rem;
+h2 {
+    font-size: 1.7em;
+    text-align: center;
 }
 
 .font-color-mobcursos {
@@ -158,45 +159,68 @@ section h2{
     background-color: rgb(0, 0, 0, 50%);
 }
 
+
 /* ----------------------------------------------- */
-/* PAGE Index - SECTION 2 (Galeria) */
+/* PAGE Index SECTION 2 (Cursos) */
 /* ----------------------------------------------- */
 
-.container-galeria {
+.container-cursos-formacao {
     background-color: rgb(255, 255, 255);
-    /* height: 100vh; */
-    /* max-width: 80px;  */
-    padding: 20px;
+    height: 100vh;
+    /* width: 100vw;  */
 
-    /* display: grid;
+    display: grid;
     grid-template-columns: auto;
-    grid-template-rows: auto;
-    grid-template-areas:
-      "foto"; */
-      display: flex;
-      flex-wrap: wrap;
-      flex-direction: row;
-      /* justify-items: center;
-      align-items: center; */
-      justify-content: space-between;
+    grid-template-rows: auto auto;
+    grid-template-areas: 
+      "title"
+      "card";
 }
 
-/* .container-galeria h2 {
+.container-cursos-formacao h2 {
     grid-area: title;
-} */
-
-.item-galeria {
-    display: flex;
-    align-items: center;
-    padding: 20px;
-    max-width: 30%;
-    /* grid-area: foto; */
-    /* background-color: rgb(99, 99, 99); */
-    
 }
 
-.item-galeria img {
-    max-width: 100%;
+.item-cursos-formacao {
+    /* padding: 0px; */
+    grid-area: card;
+    /* background-color: rgb(99, 99, 99); */
+}
+
+/* Swiper - Slider */
+
+.swiper-container {
+    width: 100vw;
+    /* height: 80%;  */
+}
+
+.swiper-slide {
+    /* height: 20vh; */
+
+    text-align: center;
+    font-size: 18px;
+    /* background: #fff; */
+
+    /* Center slide text vertically */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+  }
+
+/* .swiper-slide div { */
+    /* background-color: rgb(238, 238, 238);
+    box-shadow: 1px 1px 3px rgb(185, 185, 185);
+    max-width: 80%; */
+/* } */
+
+.swiper-slide img {
+    padding: 40px 0;
+    max-width: 250px;
+}
+
+.swiper-slide p {
+    padding: 20px
 }
 
 /* ----------------------------------------------- */
@@ -281,6 +305,7 @@ section h2{
     font-size: 18px;
     margin-top:10px;
 }
+
 .formacoes-botao-plano{
     z-index: 100;
     padding: 15px 15px;
@@ -300,11 +325,17 @@ section h2{
     margin-bottom: 20px;
 }
 
-.texto-apresentacao h1{
+/* .texto-apresentacao h1{
  font-size: 4.5em;
  padding: 20px;   
-}
+} */
 
+.img-empresa{
+    max-height: 260px;
+    margin-top: 20px;
+    padding-bottom: 10px;
+
+}
 .texto-apresentacao p, #empresa1 p{
     font-weight: 550;
     padding: 20px;   
@@ -357,7 +388,47 @@ section h2{
   :focus{
       outline: none;
   }
+
+/* ----------------------------------------------- */
+/* PAGE Empresas - SECTION (Galeria) */
+/* ----------------------------------------------- */
+
+.container-galeria {
+    background-color: rgb(255, 255, 255);
+    /* height: 100vh; */
+    /* max-width: 80px;  */
+    padding: 20px;
+
+    /* display: grid;
+    grid-template-columns: auto;
+    grid-template-rows: auto;
+    grid-template-areas:
+      "foto"; */
+      display: flex;
+      flex-wrap: wrap;
+      flex-direction: row;
+      /* justify-items: center;
+      align-items: center; */
+      justify-content: space-between;
+}
+
+/* .container-galeria h2 {
+    grid-area: title;
+} */
+
+.item-galeria {
+    display: flex;
+    align-items: center;
+    padding: 20px;
+    max-width: 30%;
+    /* grid-area: foto; */
+    /* background-color: rgb(99, 99, 99); */
     
+}
+
+.item-galeria img {
+    max-width: 100%;
+}
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 3 (Contato) */
 /* ----------------------------------------------- */
@@ -636,11 +707,6 @@ th {
     grid-area: login;
 }
 
-/*todo: verificar padronizacao em outras sections*/
-.item-login h2 {
-    text-align: center;
-}
-
 .form-login-flex {
     display: flex;
     flex-direction: column;
@@ -661,70 +727,6 @@ th {
     align-items: baseline;
 }
 
-
-
-/* ----------------------------------------------- */
-/* PAGE Cursos - Formações - SECTION 1 (Cursos) */
-/* ----------------------------------------------- */
-
-.container-cursos-formacao {
-    background-color: rgb(255, 255, 255);
-    height: 100vh;
-    /* width: 100vw;  */
-
-    display: grid;
-    grid-template-columns: auto;
-    grid-template-rows: auto auto;
-    grid-template-areas: 
-      "title"
-      "card";
-}
-
-.container-cursos-formacao h2 {
-    grid-area: title;
-}
-
-.item-cursos-formacao {
-    /* padding: 0px; */
-    grid-area: card;
-    /* background-color: rgb(99, 99, 99); */
-}
-
-/* Swiper - Slider */
-
-.swiper-container {
-    width: 100vw;
-    /* height: 80%;  */
-}
-
-.swiper-slide {
-    /* height: 20vh; */
-
-    text-align: center;
-    font-size: 18px;
-    /* background: #fff; */
-
-    /* Center slide text vertically */
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-  }
-
-/* .swiper-slide div { */
-    /* background-color: rgb(238, 238, 238);
-    box-shadow: 1px 1px 3px rgb(185, 185, 185);
-    max-width: 80%; */
-/* } */
-
-.swiper-slide img {
-    padding: 40px 0;
-    max-width: 250px;
-}
-
-.swiper-slide p {
-    padding: 20px
-}
 
 /* ----------------------------------------------- */
 /* PAGE "Todas" - SECTION (Footer) */
