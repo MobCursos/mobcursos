@@ -45,6 +45,10 @@ h2 {
     text-align: center;
 }
 
+h3 {
+    color: #0a7ee5;
+}
+
 .font-color-mobcursos {
     color: #0a7ee5;
 }
@@ -215,12 +219,15 @@ h2 {
 /* } */
 
 .swiper-slide img {
-    padding: 40px 0;
+    /* padding: 40px 0; */
     max-width: 250px;
+    max-height: 250px;
 }
 
 .swiper-slide p {
-    padding: 20px
+    font-size: 1.2em;
+    /* padding: 20px */
+
 }
 
 /* ----------------------------------------------- */
