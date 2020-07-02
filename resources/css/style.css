@@ -437,10 +437,11 @@ h3 {
     margin-bottom: 20px;
 }
 
-/* .texto-apresentacao h1{
- font-size: 4.5em;
- padding: 20px;   
-} */
+.texto-apresentacao h1{
+    background-image:
+    linear-gradient(180deg, #000428,  #004e92);
+    color: white
+}
 
 .img-empresa{
     max-height: 260px;
