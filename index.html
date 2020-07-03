@@ -39,6 +39,11 @@
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+        
+        <!-- Mapa Leaflet  -->
+        <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
 
         <title>mobCursos</title>
     </head>
@@ -288,20 +293,28 @@
             </div>
         </section>
 
-        <footer class="container-footer">
+        <footer id="footer" class="container-footer">
+            <div id="webgismap"></div>
+            <div class="item-footer-local">
+                <h4>Escritório mobCursos</h4>
+                <a id="link-address" class="btn btn-empty btn-white-transp-background" href="#footer"><ion-icon name="location" id="location"></ion-icon>Abrir mapa</a>
+                <p>Porto Alegre, Brasil</p>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>(51) 99999-9999</span>    
+            </div>
             <div class="item-icons">
-                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram" id="logo-instagram"></ion-icon>
-                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
-                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
+                <a href="#"><ion-icon name="logo-facebook" id="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram" id="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter" id="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube" id="logo-youtube"></ion-icon></a>
             </div>
             <div class="item-footer">
                 <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
            </div>
         </footer>
 
-
+            
         <!-- Waippoint - used in nav -->
         <script src="vendors/js/jquery.waypoints.min.js">
             var waypoint = new Waypoint({
@@ -312,8 +325,10 @@
             })
         </script>
 
-        <!-- Importa o arquivo js do projeto-->
-        <script type="text/javascript" src="resources/js/script.js"></script>
+        <!-- Mapa Leaflet -->
+        <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+            integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+            crossorigin=""></script>
 
         <!-- IonIcons -->
         <script type="text/javascript" src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
@@ -321,24 +336,11 @@
         <!-- Swiper - Slider -->
         <script src="https://unpkg.com/swiper/js/swiper.js"></script>
         <script src="https://unpkg.com/swiper/js/swiper.min.js"></script>
-        <script>
-            var swiper = new Swiper ('.swiper-container', {
-              // Optional parameters
-              direction: 'horizontal',
-              loop: true,
-          
-              // Pagination
-              pagination: {
-                el: '.swiper-pagination',
-              },
-          
-              // Navigation arrows
-              navigation: {
-                nextEl: '.swiper-button-next',
-                prevEl: '.swiper-button-prev',
-              }
-            })
-        </script>
+
+        <!-- Importa arquivos js do projeto-->
+        <script type="text/javascript" src="resources/js/script.js"></script>
+        <script type="text/javascript" src="resources/js/script-mapa.js"></script>
+        <script type="text/javascript" src="resources/js/script-swiper.js"></script>
 
     </body>
  </html>

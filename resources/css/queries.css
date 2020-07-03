@@ -87,6 +87,22 @@
     .item-icons ion-icon {
         margin-left: 10px;
     }
+
+    .container-footer {
+        grid-template-areas:
+          "local . ." 
+          "local footer icons"
+          "local footer icons";
+    }
+
+    .item-footer-local {
+        display: block;
+    }
+
+    #webgismap {
+        width: 45vw;
+        height: 200px; 
+    }
  }
 
  @media only screen and (min-width: 1023px) {
@@ -136,6 +152,11 @@
     .item-galeria img {
         max-width: 25vw;
         padding: 15px;
+    }
+
+    #webgismap {
+        width: 50vw;
+        height: 250px; 
     }
  
 }
@@ -193,6 +214,13 @@
         transform: scale(1.15);
         transition: transform 0.5s;
     }
+
+    #webgismap {
+        width: 60vw;
+        height: 300px; 
+    }
+
+    
 }
 
 @media only screen and (min-width: 1367px) {
