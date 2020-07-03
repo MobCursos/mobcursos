@@ -38,7 +38,7 @@
 
         <!-- jQuery -->
         <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-
+        <title>mobCursos|Entrar</title>
     </head>
     <body>
         <div class="container-login">
@@ -62,7 +62,7 @@
                         <input type="text" id="login-email" placeholder="E-mail">
                         <input type="password" id="login-password" placeholder="Senha">
                         <div class="form-login-flex-forget"> 
-                            <label for="login-forget-pass">Esqueci a senha</label>
+                            <label for="checkbox-forget">Esqueci a senha</label>
                             <input type="checkbox" id="checkbox-forget">    
                         </div> 
                         <div>               
@@ -94,15 +94,8 @@
         </div>
         
         
-
-        <script src="vendors/js/jquery.waypoints.min.js">
-            var waypoint = new Waypoint({
-                element: document.getElementById('waypoint'),
-                handler: function(direction) {
-                console.log('Scrolled to waypoint!')
-        }
-        });
-        </script>
+        <!-- Waippoint - used in nav -->
+        <script src="vendors/js/jquery.waypoints.min.js"></script>
     
         <!-- Importa o arquivo js do projeto-->
         <script src="resources/js/script.js"></script>

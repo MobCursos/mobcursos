@@ -332,7 +332,7 @@ h3 {
 .tabela-planos-individuais table td, th{
     padding-bottom: 15px;
     padding-right: 20px;
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .tabela-planos-individuais ion-icon {
@@ -498,7 +498,7 @@ h3 {
 
 }
 .texto-apresentacao p, #empresa1 p{
-    font-weight: 550;
+    font-weight: 500;
     padding: 20px;   
     font-size: 1.2em;
 }
@@ -510,7 +510,7 @@ h3 {
     font-family: 'Lato', 'Arial', sans-serif;
     font-weight: 300;
     font-size: 20px;
-    text-rendering: optimizeLegibili
+    text-rendering: optimizeLegibility;
 }
 
 .tabela-curso table td:nth-child(2), .tabela-curso table td:nth-child(3){
@@ -525,7 +525,7 @@ h3 {
 .tabela-curso table td, th{
     padding-bottom: 15px;
     padding-right: 20px;
-    font-weight: 1000;
+    font-weight: 900;
 }
 
 .tabela-curso ion-icon {
