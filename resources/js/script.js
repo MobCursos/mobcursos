@@ -2,7 +2,7 @@
 /* Função do menu sticky */
 
 $(document).ready(function(){
-    $('.js--section-features').waypoint(function(direction){
+    $('.js--section-for-sticky').waypoint(function(direction){
       /*direction indica a direção do scrolling: para cima, para baixo */
       /*Se estiver indo para baixao*/
       if(direction=="down"){
@@ -61,7 +61,7 @@ $(document).ready(function(){
     var icon = $('.mobile-nav-icon ion-icon');
     nav.slideToggle(200);
 
-    //Verrifica se tem essa classe (conforme o nome do ícone escolhido) no elemnto i. Se sim, altera
+    //Verifica se tem essa classe (conforme o nome do ícone escolhido) no elemnto i. Se sim, altera
     if(icon.prop('name') == 'menu-sharp'){
       icon.prop('name','close-sharp')
     } else {
@@ -79,16 +79,3 @@ $(document).ready(function(){
   // })
   
 });
-
-$(function() {
-  $( "#dataContato" ).datepicker();
-});
-
-var width = screen.availHeight;
-if(width > 480){
-  $("#js-item-footer-small").css("display", "none");
-  $("#js-item-footer-medium").css("display","");
-}else{
-  $("#js-item-footer-medium").css("display", "none");
-  $("#js-item-footer-small").css("display","");
-}
