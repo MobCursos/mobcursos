@@ -1,74 +1,136 @@
-@media only screen and (min-width: 480px){
+/* @media only screen and (min-width: 480px) {
     
-    /* .img-empresa{
-        max-height: 260px;
-        margin-top: 20px;
-        padding-bottom: 10px;
+} */
 
+@media only screen and (min-width: 767px) {
+
+    .container-login {
+        grid-template-rows: 30vh auto 20vh;
     }
 
-    .item-section p{
-        font-size: 24px;
+    .container-hero-header {
+        background-position: 12%;
+        grid-template-rows: 10vh auto 30vh;
     }
 
-    h2{
-        font-size: 2rem;
+    .item-hero-text-box {
+        margin: 20px;
     }
 
-    .empresa-header-subtitulo{
-        margin-left: 4px;
-    } */
-}
+    .container-cursos-formacao {
+        grid-template-rows: 20vh 60vh;
+    }
 
-@media only screen and (min-width: 767px){
-    .formacoes-botao-plano{
+    .formacoes-botao-plano {
      font-size: 18px;
      box-shadow: 0 13px 16px 0 rgba(43,107,177,.37);
     }
 
-    section p{
-     font-size: 24px;
+    .container-cursos-formacao p{
+        font-size: 1.3em;
+        max-width: 50vw;
     }
  
-    .img-empresa{
+    .container-cursos-formacao h3{
+        font-size: 1.5em;
+        max-width: 50vw;
+    }
+ 
+    .container-planos-individuais h3{
+        font-size: 1.5em;
+    }
+ 
+    .img-empresa {
          max-height: 100%;
+    }
+
+    h2 {
+        margin-top: 40px;
+    }
+
+    .item-icons {
+        flex-direction: row;
+        justify-content: flex-end;
+        align-items: baseline;
+        font-size: 30px;
+    }
+
+    .item-icons ion-icon {
+        margin-left: 10px;
     }
  }
 
- @media only screen and (min-width: 1023px){
-    .texto-apresentacao h1{
-        font-size: 3.1em;
-       }
+ @media only screen and (min-width: 1023px) {
     
-    .texto-apresentacao p{
-       font-size: 25px;
+    .container-login {
+        grid-template-rows: 25vh auto 20vh;
     }
 
-    h2{
-        text-align: center;
-        font-size: 3rem;
+    .container-hero-header {
+        grid-template-rows: 10vh auto 35vh;
     }
+
+    .texto-apresentacao h1 {
+        font-size: 3.1em;
+    }
+    
+    .texto-apresentacao p, #empresa1 p{   
+        font-size: 1.3em;
+    }
+
+    h2 {
+        text-align: center;
+        font-size: 1.6rem;
+    }
+    .container-cursos-formacao {
+        grid-template-rows: 10vh auto;
+    }
+
+    .container-cursos-formacao p{
+        font-size: 1.3em;
+        max-width: 50vw;
+    }
+ 
+    .container-cursos-formacao h3{
+        font-size: 1.5em;
+        max-width: 50vw;
+    }
+
+    .container-planos-individuais h3{
+        font-size: 1.5em;
+    }
+
+    .item-depoimentos {
+        max-width: 60vw;
+    }
+
+    .item-galeria img {
+        max-width: 25vw;
+        padding: 15px;
+    }
+ 
 }
 
-@media only screen and (min-width: 1200px){
-    .texto-apresentacao h1{
-        font-size: 4.1em;
-       }
+@media only screen and (min-width: 1200px) {
 
-    section p{
-        font-size: 35px;
-     }
-
-     .item-section p{
-         font-size: 2.5rem;
-     }
-
-     h2{
-        text-align: center;
-        font-size: 2.2rem;
+    .swiper-container {
+        width: 98vw;
+    }
+    
+    .texto-apresentacao h1 {
+        font-size: 2.5em;
     }
 
-    .form_wrap{
+    h2 {
+        font-size: 2rem;
+    }
+
+    .form_wrap {
         width: 50%;
+    }
+
+    .item-galeria img {
+        max-width: 25vw;
+        padding: 40px;
     }
 }
