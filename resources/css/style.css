@@ -296,6 +296,7 @@ h3 {
     grid-area: title-planos;
 }
 
+/* Utilizando SWIPER em telas pequenas e médias*/
 .item-planos-individuais {
     /* padding: 0px; */
     grid-area: card-planos;
@@ -312,6 +313,11 @@ h3 {
 
 .item-planos-individuais td {
     padding: 5px;
+}
+
+/* Não utiliza SWIPER em telas grandes*/
+.item-planos-ind-telas-grandes {
+    display: none;
 }
 
 .tabela-planos-individuais table td:nth-child(2), .tabela-curso table td:nth-child(3){

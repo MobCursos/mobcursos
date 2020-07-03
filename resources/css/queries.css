@@ -103,7 +103,7 @@
         font-size: 3.1em;
     }
     
-    .texto-apresentacao p, #empresa1 p{   
+    .texto-apresentacao p, #empresa1 p {   
         font-size: 1.3em;
     }
 
@@ -115,17 +115,17 @@
         grid-template-rows: 10vh auto;
     }
 
-    .container-cursos-formacao p{
+    .container-cursos-formacao p {
         font-size: 1.3em;
         max-width: 50vw;
     }
  
-    .container-cursos-formacao h3{
+    .container-cursos-formacao h3 {
         font-size: 1.5em;
         max-width: 50vw;
     }
 
-    .container-planos-individuais h3{
+    .container-planos-individuais h3 {
         font-size: 1.5em;
     }
 
@@ -142,7 +142,26 @@
 
 @media only screen and (min-width: 1200px) {
 
-    .container-login{
+    .container-planos-individuais {
+        grid-template-rows: 20vh auto;
+    }
+    
+    .item-planos-individuais {
+        display: none;
+    }
+
+    .item-planos-ind-telas-grandes {
+        grid-area: card-planos;
+        display: flex;
+        justify-content: center;
+
+    }
+
+    .item-plano-ind {
+        margin: 0 10px;
+    }
+
+    .container-login {
         grid-template-rows: 20vh auto 18vh; 
     }
    
@@ -174,4 +193,12 @@
         transform: scale(1.15);
         transition: transform 0.5s;
     }
+}
+
+@media only screen and (min-width: 1367px) {
+
+    .container-planos-individuais {
+        grid-template-rows: 25vh auto;
+    }
+
 }
