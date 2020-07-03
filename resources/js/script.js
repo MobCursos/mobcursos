@@ -14,7 +14,7 @@ $(document).ready(function(){
          $('nav').removeClass('sticky');
       }
       
-    },{offset:'160px;'});
+    },{offset:'60px;'});
   
     // Select all links with hashes
   $('a[href*="#"]')

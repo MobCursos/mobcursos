@@ -100,7 +100,7 @@ h3 {
 
 .main-nav li {
     list-style: none;
-    padding: 10px;
+    padding: 0px;
 }
 
 .main-nav a {
@@ -110,9 +110,19 @@ h3 {
     border: 10px;
 }
 
-.main-nav li {
-    display: inline-block;
-    margin-left: 40px;
+.mobile-nav-icon {
+    cursor: pointer;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    display:block;
+    border: 0;
+    padding: 8px 5px;
+    font-weight: 400;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 100%;
 }
 
 .sticky {
@@ -121,7 +131,7 @@ h3 {
     left:0;
     width:100vw;
     background-color: rgb(255, 255, 255);
-    z-index: 9999999;
+    z-index: 9999;
     box-shadow: 0px 3px 7px 0px #888;
 }
 
@@ -131,32 +141,20 @@ h3 {
 }
 
 .sticky .main-nav {
-    margin-top: 10px;
+    /* margin-top: 10px; */
+    margin-left: 8px;
+    background-color: white;
+    box-shadow: none;
 }
 
 .sticky .main-nav li a:link,
 .sticky .main-nav li a:visited {
+    color: #555;
     border-bottom: 0px;
     padding: 5px 0;
 }
 
-.main-nav li a:link,
-.main-nav li a:visited {
-    padding: 8px 0;
-    font-weight: 400;
-    color: rgb(85, 85, 85);
-    text-decoration: none;
-    /* text-transform: uppercase; */
-    font-size: 100%;
-    border-bottom: 2px solid transparent;
-    transition: border-bottom 0.2s;
-}
 
-.main-nav li a:hover,
-.main-nav li a:active {
-    border-left: 2px solid #0a7ee5;
-    border-right: 2px solid #0a7ee5;
-}
 
 .item-hero-text-box {
     grid-area: text;
