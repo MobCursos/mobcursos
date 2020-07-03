@@ -77,5 +77,5 @@ $(document).ready(function(){
   //   nav.delay(3000).slideToggle(200);
   //   icon.prop('name','menu-sharp').delay(4000);
   // })
-  
+
 });

@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="https://unpkg.com/leaflet@1.6.0/dist/leaflet.css"
+   integrity="sha512-xwE/Az9zrjBIphAcBb3F6JVqxf46+CDLwfLMHloNu6KEQCAWi6HcDUbeOfBIptF7tcCzusKFjFw2yuvEpDL9wQ=="
+   crossorigin=""/>
+        <title>mobCursos</title>
+</head>
+<body>
+    <div id="webgismap"></div>
+    <script src="https://unpkg.com/leaflet@1.6.0/dist/leaflet.js"
+   integrity="sha512-gZwIG9x3wUXg2hdXF6+rVkLF/0Vi9U8D2Ntg4Ga5I5BZpVkVxlJWbSQtXPSiUTtC0TjtGOmxa1AJPuV0CPthew=="
+   crossorigin=""></script>
+    <script>
+        
+        var mymap = L.map('webgismap');
+
+        var osmUrl='https://{s}.tile.openstreetmap.org/{z}/{x}/{y}.png';
+        var osmAttrib='Map data © <a href="https://openstreetmap.org">OpenStreetMap</a> contributors';
+        var osm = new L.TileLayer(osmUrl, {minZoom: 2, maxZoom: 21, attribution: osmAttrib});
+
+        mymap.setView(new L.LatLng(-30.034966, -51.238696),14);
+        mymap.addLayer(osm);
+
+        var mobCursosIcon = L.icon({
+            iconUrl: 'resources/img/logo-blue0.png',
+            iconSize:     [40, 32],
+            iconAnchor:   [15, 32],
+            shadowAnchor: [4, 62],
+            popupAnchor:  [-3, -76]
+        });
+
+        L.marker([-30.034966, -51.238696], {icon: mobCursosIcon}).addTo(mymap).bindPopup("Escritório mobCursos");
+
+    </script>
+    <style>
+        #webgismap {
+	margin: 40px auto;
+	width: 80vw;
+	height: 600px; 
+	z-index: 1;
+}
+    </style>
+</body>
+</html>
