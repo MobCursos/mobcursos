@@ -63,6 +63,7 @@ h3 {
     /*image source: https://i2.wp.com/www.consultoragestal.com.ar/wp-content/uploads/2020/02/img_30298_programhtml.jpg*/
     /* height: 500px; */
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: 30%;
     height: 100vh;
@@ -304,6 +305,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 80%;
+    background-attachment: fixed;
     /* height: 100vh; */
     /* width: 100vw;  */
 
@@ -452,7 +454,7 @@ h3 {
 .texto-apresentacao p, #empresa1 p{
     font-weight: 550;
     padding: 20px;   
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .table{
@@ -541,7 +543,7 @@ h3 {
 }
 
 .item-galeria img {
-    max-width: 15vw;
+    max-width: 30vw;
 }
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 3 (Contato) */
@@ -810,7 +812,7 @@ th {
 
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: 10vh auto 20vh;  /*Height de footer: Cuidar em media queries. Usado na pagina login*/
+    grid-template-rows: 20vh auto 20vh;  /*Height de footer: Cuidar em media queries. Usado na pagina login*/
     grid-template-areas:
       "nav nav nav"
       ". login ."
@@ -839,6 +841,7 @@ th {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 10px;
 }
 
 
@@ -848,8 +851,8 @@ th {
 .container-footer {
     grid-area: login-footer;
     padding: 20px;
-    color: white;
-    background-color: rgb(80, 80, 80);
+    color: #555;
+    background-color: rgb(195, 195, 195);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
