@@ -94,7 +94,7 @@
                         </div>
                     </div>
             </section>
-            <section id="planos" class="item-section">
+            <section id="planos" class="item-section js--section-for-sticky">
                 <h2>Planos Empresariais</h2>
                 <div class="tabela-curso">
                     <table class="table">
@@ -209,6 +209,19 @@
 
         <!-- IonIcons -->
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        
+        <script>
+            $( "#dataContato" ).datepicker();
+
+            var width = screen.availHeight;
+            if(width > 480){
+              $("#js-item-footer-small").css("display", "none");
+              $("#js-item-footer-medium").css("display","");
+            }else{
+              $("#js-item-footer-medium").css("display", "none");
+              $("#js-item-footer-small").css("display","");
+            }
+        </script>
     </body>
  </html>
  
