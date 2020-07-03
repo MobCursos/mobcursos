@@ -94,7 +94,7 @@
                         </div>
                     </div>
             </section>
-            <section id="planos" class="item-section">
+            <section id="planos" class="item-section js--section-for-sticky">
                 <h2>Planos Empresariais</h2>
                 <div class="tabela-curso">
                     <table class="table">
@@ -182,12 +182,18 @@
 
         </div>
         <footer class="container-footer">
+            <div class="item-footer-local">
+                <h4>Escritório mobCursos</h4>
+                <p>Porto Alegre, Brasil</p>
+                <ion-icon name="logo-whatsapp"></ion-icon>
+                <span>(51) 99999-9999</span>    
+            </div>
             <div class="item-icons">
-                <ion-icon name="logo-facebook" id="logo-facebook"></ion-icon>
-                <ion-icon name="logo-instagram" id="logo-instagram"></ion-icon>
-                <ion-icon name="logo-twitter" id="logo-twitter"></ion-icon>
-                <ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon>
-                <ion-icon name="logo-youtube" id="logo-youtube"></ion-icon>
+                <a href="#"><ion-icon name="logo-facebook" id="logo-facebook"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-instagram" id="logo-instagram"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-twitter" id="logo-twitter"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-linkedin" id="logo-linkedin"></ion-icon></a>
+                <a href="#"><ion-icon name="logo-youtube" id="logo-youtube"></ion-icon></a>
             </div>
             <div class="item-footer">
                 <p>Copyright &copy; 2020 mobCursos. <br> Todos os direitos reservados.</p>
@@ -209,6 +215,19 @@
 
         <!-- IonIcons -->
         <script src="https://unpkg.com/ionicons@5.0.0/dist/ionicons.js"></script>
+        
+        <script>
+            $( "#dataContato" ).datepicker();
+
+            var width = screen.availHeight;
+            if(width > 480){
+              $("#js-item-footer-small").css("display", "none");
+              $("#js-item-footer-medium").css("display","");
+            }else{
+              $("#js-item-footer-medium").css("display", "none");
+              $("#js-item-footer-small").css("display","");
+            }
+        </script>
     </body>
  </html>
  

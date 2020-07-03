@@ -63,6 +63,7 @@ h3 {
     /*image source: https://i2.wp.com/www.consultoragestal.com.ar/wp-content/uploads/2020/02/img_30298_programhtml.jpg*/
     /* height: 500px; */
     background-repeat: no-repeat;
+    background-attachment: fixed;
     background-size: cover;
     background-position: 30%;
     height: 100vh;
@@ -97,10 +98,9 @@ h3 {
     box-shadow: 1px 1px 4px black;
 }
 
-
 .main-nav li {
     list-style: none;
-    padding: 10px;
+    padding: 0px;
 }
 
 .main-nav a {
@@ -111,9 +111,50 @@ h3 {
 }
 
 .mobile-nav-icon {
+    cursor: pointer;
+}
+
+.main-nav li a:link,
+.main-nav li a:visited {
+    display:block;
+    border: 0;
+    padding: 8px 5px;
+    font-weight: 400;
+    color: rgb(233, 233, 233);
+    text-decoration: none;
+    font-size: 100%;
+}
+
+.sticky {
+    position: fixed;
+    top:0;
+    left:0;
+    width:100vw;
+    background-color: rgb(255, 255, 255);
+    z-index: 9999;
+    box-shadow: 0px 3px 7px 0px #888;
+}
+
+.sticky .mobile-nav-icon, .mobile-nav-icon {
     color: #0a7ee5;
     font-size: 50px;
 }
+
+.sticky .main-nav {
+    /* margin-top: 10px; */
+    margin-left: 8px;
+    background-color: white;
+    box-shadow: none;
+}
+
+.sticky .main-nav li a:link,
+.sticky .main-nav li a:visited {
+    color: #555;
+    border-bottom: 0px;
+    padding: 5px 0;
+}
+
+
 
 .item-hero-text-box {
     grid-area: text;
@@ -255,6 +296,7 @@ h3 {
     grid-area: title-planos;
 }
 
+/* Utilizando SWIPER em telas pequenas e médias*/
 .item-planos-individuais {
     /* padding: 0px; */
     grid-area: card-planos;
@@ -271,6 +313,11 @@ h3 {
 
 .item-planos-individuais td {
     padding: 5px;
+}
+
+/* Não utiliza SWIPER em telas grandes*/
+.item-planos-ind-telas-grandes {
+    display: none;
 }
 
 .tabela-planos-individuais table td:nth-child(2), .tabela-curso table td:nth-child(3){
@@ -304,6 +351,7 @@ h3 {
     background-repeat: no-repeat;
     background-size: cover;
     background-position: 80%;
+    background-attachment: fixed;
     /* height: 100vh; */
     /* width: 100vw;  */
 
@@ -452,7 +500,7 @@ h3 {
 .texto-apresentacao p, #empresa1 p{
     font-weight: 550;
     padding: 20px;   
-    font-size: 25px;
+    font-size: 1.2em;
 }
 
 .table{
@@ -541,7 +589,7 @@ h3 {
 }
 
 .item-galeria img {
-    max-width: 15vw;
+    max-width: 30vw;
 }
 /* ----------------------------------------------- */
 /* PAGE Empresas - SECTION 3 (Contato) */
@@ -810,7 +858,7 @@ th {
 
     display: grid;
     grid-template-columns: 15vw 70vw 15vw;
-    grid-template-rows: 10vh auto 20vh;  /*Height de footer: Cuidar em media queries. Usado na pagina login*/
+    grid-template-rows: 20vh auto 20vh;  /*Height de footer: Cuidar em media queries. Usado na pagina login*/
     grid-template-areas:
       "nav nav nav"
       ". login ."
@@ -839,6 +887,7 @@ th {
     display: flex;
     flex-direction: row;
     align-items: baseline;
+    margin-bottom: 10px;
 }
 
 
@@ -848,14 +897,14 @@ th {
 .container-footer {
     grid-area: login-footer;
     padding: 20px;
-    color: white;
-    background-color: rgb(80, 80, 80);
+    color: #555;
+    background-color: rgb(195, 195, 195);
     display: grid;
     grid-template-columns: auto;
     grid-template-rows: auto;
-    grid-template-areas: 
-      "icons"
-      "footer";
+    grid-template-areas:
+    "icons"
+    "footer";
 }
 
 .item-footer {
@@ -870,11 +919,25 @@ th {
 
 .item-icons {
     grid-area: icons;
-    display: inline-flex;
+    display: flex;
     flex-direction: row;
     justify-content: space-around;
     align-items: flex-end;
     font-size: 30px;
+}
+
+.item-footer-local {
+    display: none;
+    grid-area: local;
+}
+
+.item-footer-local h4 ,
+.item-footer-local p {
+    margin: 10px 0;
+}
+
+.item-footer-local .btn {
+    padding: 5px;
 }
 
 #logo-facebook{
@@ -895,4 +958,12 @@ th {
 
 #logo-linkedin{
     color: #0e76a8;
+}
+
+#webgismap {
+    display: none;
+	margin: 40px auto;
+	/* width: 60vw;
+	height: 300px;  */
+	z-index: 1;
 }
