@@ -165,5 +165,13 @@
     .item-galeria img {
         max-width: 25vw;
         padding: 40px;
+        height: auto; 
+        transform: scale(1);
+        transition: transform 0.5s;
+    }
+    
+    .item-galeria img:hover {
+        transform: scale(1.15);
+        transition: transform 0.5s;
     }
 }
